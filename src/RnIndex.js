@@ -2,6 +2,8 @@ import React from 'react';
 import {View, ScrollView } from 'react-native';
 import { ListItem, Subheader, Toolbar } from 'react-native-material-ui';
 import {BASIC} from './demoList'
+import MapboxGL from "@mapbox/react-native-mapbox-gl/javascript/index";
+MapboxGL.setAccessToken("sk.eyJ1IjoiMXVva3VuIiwiYSI6ImNqZ3JtdnVwYzA3MzMzMW54Zjlld2U0YjIifQ.Sz0Wlb5y0d8DZFKxVSekyg");
 
 export default class extends React.Component {
     render() {
