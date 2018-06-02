@@ -5,13 +5,15 @@ module.exports = {
             description: '基本地图',
             module: require('./components/MapView'),
         },
+    ],
+    Layers : [
         {
-            title:'Marker',
-            description: 'marker实例',
+            title:'SymbolLayer',
+            description: 'Marker实例',
             module:require('./components/Marker')
         },
         {
-            title:'Clusters',
+            title:'CircleLayer',
             description: 'Clusters点聚会应用',
             module:require('./components/Clusters')
         }

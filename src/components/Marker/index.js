@@ -3,7 +3,8 @@ import MapboxGL from '@mapbox/react-native-mapbox-gl'
 
 export default class extends React.Component {
     render(){
-        for(let i=0;i<10000;i++){
+        const coordinates = [];
+        for(let i=0;i<1000;i++){
             const lat = Math.floor((Math.random()-0.5)*360);
             const lng = Math.floor((Math.random()-0.5)*360);
             coordinates.push([lat,lng])
@@ -22,8 +23,8 @@ export default class extends React.Component {
         }
         return (
             <MapboxGL.MapView style={{flex:1}}>
-                <MapboxGL.ShapeSource shape={geoJSON}>
-                    <MapboxGL.SymbolLayer style={styles.mark}/>
+                <MapboxGL.ShapeSource id="asd" shape={geoJSON}>
+                    <MapboxGL.SymbolLayer id="qwe" style={styles.mark}/>
                 </MapboxGL.ShapeSource>
             </MapboxGL.MapView>
         )

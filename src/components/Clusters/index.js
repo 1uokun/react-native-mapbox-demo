@@ -12,12 +12,15 @@ export default class extends React.Component {
                     cluster={true}
                     url="https://www.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
                 >
+                    <MapboxGL.SymbolLayer
+                        id='SymbolLayerPoints'
+                        style={layerStyles.clusterCount}
+                    />
                     <MapboxGL.CircleLayer
                         id='clusteredPoints'
                         belowLayerID='pointCount'
                         filter={['has', 'point_count']}
                         style={layerStyles.clusteredPoints} />
-
                 </MapboxGL.ShapeSource>
             </MapboxGL.MapView>
         )
@@ -45,5 +48,9 @@ const layerStyles = MapboxGL.StyleSheet.create({
         circleOpacity: 0.84,
         circleStrokeWidth: 2,
         circleStrokeColor: 'white',
+    },
+    clusterCount: {
+        textField: '{point_count}',
+        textSize: 12,
     },
 });
