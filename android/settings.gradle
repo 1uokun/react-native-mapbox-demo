@@ -1,7 +1,11 @@
 rootProject.name = 'demo'
+include ':react-native-mytoast'
+project(':react-native-mytoast').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-mytoast/android')
 include ':react-native-vector-icons'
 project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
 include ':mapbox-react-native-mapbox-gl'
 project(':mapbox-react-native-mapbox-gl').projectDir = new File(rootProject.projectDir, '../node_modules/@mapbox/react-native-mapbox-gl/android/rctmgl')
+//include ':react-native-amap-location'
+//project(':react-native-amap-location').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-amap-location/android')
 
 include ':app'

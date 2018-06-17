@@ -5,6 +5,11 @@ module.exports = {
             description: '基本地图',
             module: require('./components/MapView'),
         },
+        {
+            title: 'PointAnnotation',
+            description: '点注解+callout',
+            module: require('./components/Avatar'),
+        },
     ],
     Layers : [
         {
@@ -17,5 +22,12 @@ module.exports = {
             description: 'Clusters点聚会应用',
             module:require('./components/Clusters')
         }
+    ],
+    Offline : [
+        {
+            title:'OfflineManager',
+            description: '离线地图',
+            module:require('./components/Offline')
+        },
     ]
 };

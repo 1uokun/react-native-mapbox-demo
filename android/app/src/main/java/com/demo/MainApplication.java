@@ -3,12 +3,14 @@ package com.demo;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.example.react_native_mytoast.MyToastPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.mapbox.rctmgl.RCTMGLPackage;
+//import com.reactlibrary.RNAmapLocationPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,8 +27,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+//            new RNAmapLocationPackage(),
+            new MyToastPackage(),
             new VectorIconsPackage(),
-          new RCTMGLPackage()
+            new RCTMGLPackage()
       );
     }
 
