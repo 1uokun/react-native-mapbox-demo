@@ -14,7 +14,7 @@ module.exports = {
     Layers : [
         {
             title:'CircleLayer',
-            description: 'Clusters点聚会应用',
+            description: 'Clusters点聚合应用',
             module:require('./components/Clusters')
         },
         {
