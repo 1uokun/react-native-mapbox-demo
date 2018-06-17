@@ -13,15 +13,20 @@ module.exports = {
     ],
     Layers : [
         {
+            title:'CircleLayer',
+            description: 'Clusters点聚会应用',
+            module:require('./components/Clusters')
+        },
+        {
+            title:'FillExtrusionLayer',
+            description: '室内3D图层',
+            module:require('./components/Indoor')
+        },
+        {
             title:'SymbolLayer',
             description: 'Marker实例',
             module:require('./components/Marker')
         },
-        {
-            title:'CircleLayer',
-            description: 'Clusters点聚会应用',
-            module:require('./components/Clusters')
-        }
     ],
     Offline : [
         {
