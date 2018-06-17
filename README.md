@@ -1,5 +1,5 @@
 <a href="https://www.mapbox.com">
-  <img src="/assets/mapbox_logo.png" width="500"/>
+  <img src="https://raw.githubusercontent.com/mapbox/react-native-mapbox-gl/master/assets/mapbox_logo.png" width="500"/>
 </a>
 
 # react-native-mapbox-gl各组件使用案例
@@ -26,13 +26,13 @@
 * [CircleLayer](/src/components/Clusters/index.js)
 点聚合案例
 <a href="/src/components/Clusters/index.js">
-  <img src="/assets/Clusters.jpg" width="500"/>
+  <img src="/assets/Clusters.jpg" width="250"/>
 </a>
 
 * [FillExtrusionLayer](/src/components/Indoor/index.js)
 室内3D图层
 <a href="/src/components/Indoor/index.js">
-  <img src="/assets/Indoor.jpg" width="500"/>
+  <img src="/assets/Indoor.jpg" width="250"/>
 </a>
 
 * [FillLayer]()
@@ -41,7 +41,7 @@
 * [SymbolLayer](/src/components/Marker/index.js)
 支持海量点
 <a href="/src/components/Marker/index.js">
-  <img src="/assets/Marker.jpg" width="500"/>
+  <img src="/assets/Marker.jpg" width="250"/>
 </a>
 
 ### Offline
