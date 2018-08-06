@@ -11,18 +11,18 @@
 
 ### Components
 * [MapView](/src/components/MapView/index.js)
-* [Light]()
-* [StyleSheet]()
-* [PointAnnotation]()
-* [Callout]()
+* Light
+* StyleSheet
+* PointAnnotation
+* Callout
 
 ### Sources
-* [VectorSource]()
-* [ShapeSource]()
-* [RasterSource]()
+* VectorSource
+* ShapeSource
+* RasterSource
 
 ### Layers
-* [BackgroundLayer]()
+* BackgroundLayer
 * [CircleLayer](/src/components/Clusters/index.js)
 点聚合案例
 <a href="/src/components/Clusters/index.js">
@@ -35,9 +35,9 @@
   <img src="/assets/Indoor.jpg" width="250"/>
 </a>
 
-* [FillLayer]()
-* [LineLayer]()
-* [RasterLayer]()
+* FillLayer
+* LineLayer
+* RasterLayer
 * [SymbolLayer](/src/components/Marker/index.js)
 支持海量点
 <a href="/src/components/Marker/index.js">
@@ -45,5 +45,9 @@
 </a>
 
 ### Offline
-* [OfflineManager]()
-* [SnapshotManager]()
+* OfflineManager
+* SnapshotManager
+
+### 其他
+* [自动规划路线接口](https://www.mapbox.com/bites/00058/#)
+* [地图数据提供商](https://data.jianshukeji.com/)
