@@ -28,6 +28,13 @@ module.exports = {
             module:require('./components/Marker')
         },
     ],
+    turf : [
+        {
+            title:'Distance',
+            description: 'Point测量距离',
+            module:require('./components/Distance')
+        }
+    ],
     Offline : [
         {
             title:'OfflineManager',

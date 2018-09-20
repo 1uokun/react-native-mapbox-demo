@@ -2,7 +2,7 @@ import { StackNavigator } from 'react-navigation';
 import React from 'react'
 import { COLOR, ThemeProvider } from 'react-native-material-ui';
 import RnIndex from './src/RnIndex';
-import { BASIC,Layers,Offline } from './src/demoList';
+import { BASIC,Layers,turf,Offline } from './src/demoList';
 const uiTheme = {
     palette: {
         primaryColor: COLOR.blue500,
@@ -23,7 +23,7 @@ const scenes = {
     },
 };
 
-[...BASIC,...Layers,...Offline].map((component) => {
+[...BASIC,...Layers,...turf,...Offline].map((component) => {
     const Module = component.module.default;
     scenes[component.title] = {
         screen: Module,

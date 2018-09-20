@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, ScrollView } from 'react-native';
 import { ListItem, Subheader, Toolbar } from 'react-native-material-ui';
-import {BASIC,Layers,Offline} from './demoList'
+import {BASIC,Layers,turf,Offline} from './demoList'
 import MapboxGL from "@mapbox/react-native-mapbox-gl/javascript/index";
 MapboxGL.setAccessToken("sk.eyJ1IjoiMXVva3VuIiwiYSI6ImNqZ3JtdnVwYzA3MzMzMW54Zjlld2U0YjIifQ.Sz0Wlb5y0d8DZFKxVSekyg");
 
@@ -15,7 +15,11 @@ export default class extends React.Component {
                     centerElement="MapboxGL实例"
                 />
                 <ScrollView>
-                    {[{header:"基础",item:BASIC},{header:"Layers",item:Layers},{header:"Offline",item:Offline}].map((a,i)=>{
+                    {[
+                        {header:"基础",item:BASIC},
+                        {header:"Layers",item:Layers},
+                        {header:"turfjs",item:turf},
+                        {header:"Offline",item:Offline}].map((a,i)=>{
                         return (
                             <View key={i}>
                             <Subheader text={a.header} />

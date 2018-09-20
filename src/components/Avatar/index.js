@@ -12,7 +12,7 @@ export default class extends React.Component {
                     id="qwe"
                     title={"标题"}
                     snippet={"描述\nant女神"}
-                    selected={true}
+                    // selected={true}
                     anchor={{ x: 0.5, y: 0.5 }}
                     coordinate={[-151.5129, 63.1016]}
                 >
