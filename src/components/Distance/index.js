@@ -24,7 +24,7 @@ export default class ShowPointAnnotation extends React.Component {
         // 获得两点距离 首先点数要超过俩
         if(coords.length>1){
             let line = lineString(coords);
-            ToastAndroid.show(length(line, {units: 'kilometers'})+'',ToastAndroid.LONG,);
+            ToastAndroid.show('距离'+length(line, {units: 'kilometers'}).toFixed(2)+'千米',ToastAndroid.LONG,);
         }
     }
 
@@ -36,6 +36,7 @@ export default class ShowPointAnnotation extends React.Component {
 
             items.push(
                 <MapboxGL.PointAnnotation
+                    key={i}
                     title={''}
                     snippet={i+''}
                     id={i+''}
@@ -50,12 +51,8 @@ export default class ShowPointAnnotation extends React.Component {
     }
 
     removePoint(i){
-        if(this.state.coordinates.length>1){
-            this.state.coordinates.splice(i,1);
-            this.setState({coordinates:this.state.coordinates})
-        }else {
-            this.setState({coordinates:[]})
-        }
+        this.state.coordinates.splice(i,1);
+        this.setState({coordinates:this.state.coordinates})
         this.getDistance(this.state.coordinates)
     }
 

@@ -21,6 +21,14 @@
 * ShapeSource
 * RasterSource
 
+### Turfjs应用
+* Turfjs更多应用 - http://turfjs.org/
+* [Measure distances](/src/components/Distance/index.js)
+支持多点测距
+<a href="/src/components/Distance/index.js">
+  <img src="/assets/Distance.jpg" width="250"/>
+</a>
+
 ### Layers
 * BackgroundLayer
 * [CircleLayer](/src/components/Clusters/index.js)
