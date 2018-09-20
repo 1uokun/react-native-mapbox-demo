@@ -29,6 +29,12 @@
   <img src="/assets/Distance.jpg" width="250"/>
 </a>
 
+* [polygon area](/src/components/Area/index.js)
+计算面积
+<a href="/src/components/Area/index.js">
+  <img src="/assets/Area.jpg" width="250"/>
+</a>
+
 ### Layers
 * BackgroundLayer
 * [CircleLayer](/src/components/Clusters/index.js)

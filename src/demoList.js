@@ -31,8 +31,13 @@ module.exports = {
     turf : [
         {
             title:'Distance',
-            description: 'Point测量距离',
+            description: 'LineLayer测量距离',
             module:require('./components/Distance')
+        },
+        {
+            title:'Area',
+            description: 'FillLayer测量面积',
+            module:require('./components/Area')
         }
     ],
     Offline : [
