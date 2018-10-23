@@ -38,6 +38,11 @@ module.exports = {
             title:'Area',
             description: 'FillLayer测量面积',
             module:require('./components/Area')
+        },
+        {
+            title:'CircleFillLayer',
+            description: 'Circle实心圆',
+            module:require('./components/Circle')
         }
     ],
     Offline : [

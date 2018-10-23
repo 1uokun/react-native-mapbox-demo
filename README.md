@@ -35,6 +35,12 @@
   <img src="/assets/Area.jpg" width="250"/>
 </a>
 
+* [circle geoJSON](/src/components/Circle/index.js)
+圆形geoJSON [issuce](https://github.com/geojson/geojson-spec/issues/1)
+<a href="/src/components/Circle/index.js">
+  <img src="/assets/Circle.jpg" width="250"/>
+</a>
+
 ### Layers
 * BackgroundLayer
 * [CircleLayer](/src/components/Clusters/index.js)
