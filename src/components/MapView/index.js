@@ -10,6 +10,7 @@ export default class extends React.Component {
         };
         return (
             <MapboxGL.MapView
+                ref={(c) => (this.map = c)}
                 style={{flex:1}}
                 animated={true}
                 localizeLabels={true}
